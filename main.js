@@ -8,7 +8,8 @@ function ShowCaption(){
         }
         if(F)
             CurrentCaption.removeChild(CurrentCaption.firstChild);
-        CurrentCaption.appendChild(Description);
+        var Text = document.createTextNode(Description);
+        CurrentCaption.appendChild(Text);
         F = true;
     } catch(e){
         alert("ShowCaption " + e);
@@ -33,7 +34,7 @@ function LoadManager(){
         }
 
         for(var I = 0; I < Photos.length; I++){
-            Figures[I] = {Photo: Photos[I], Caption: Captions[I]};
+            Figures[I] = {Photo: Photos[I], Caption: Captions[I].textContent};
         }
 
     } catch (e){
