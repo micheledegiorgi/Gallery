@@ -1,21 +1,33 @@
-body{
+body {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.container{
+a {
+    color: red;
+}
+
+li {
+    margin: 10px 0;
+}
+
+div {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-figure{
+figure {
     padding: 10px;
     margin: 10px;
 }
 
-img{
+figcaption {
+    display: none;
+}
+
+img {
     width: 100%;
     cursor: pointer;
 }
